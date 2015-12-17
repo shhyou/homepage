@@ -57,8 +57,8 @@
 body {
   background-color: #fff;
   padding:50px;
-  font:20px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#727272;
   font-weight:400;
 }
 
@@ -108,7 +108,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:950px;
+  width:860px;
   margin:0 auto;
 }
 
@@ -122,7 +122,7 @@ blockquote {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color:#333;
-  font-size:18px;
+  font-size:12px;
 }
 
 pre {
@@ -224,7 +224,7 @@ header ul a strong {
 }
 
 section {
-  width:700px;
+  width:500px;
   float:right;
   padding-bottom:50px;
 }
@@ -241,7 +241,7 @@ hr {
 }
 
 footer {
-  width:970px;
+  width:270px;
   float:left;
   position:fixed;
   bottom:50px;
