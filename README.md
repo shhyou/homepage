@@ -12,6 +12,8 @@ programming languages to create correct and efficient programs.
     In *Proceedings of the 8th ACM SIGPLAN Symposium on Haskell*
     (Haskell'15).
 
+    [[paper]](http://dl.acm.org/citation.cfm?id=2804315)
+
     This paper presents Modular Reifiable Matching (MRM):
     a new approach to two level types using a
     _fixpoint of list-of-functors_ representation.
@@ -35,8 +37,6 @@ programming languages to create correct and efficient programs.
     applicability are illustrated through various examples
     in the paper.
 
-    [[paper]](http://dl.acm.org/citation.cfm?id=2804315)
-
 ## Education
 - **B.S.** in [Computer Science and Information Engineering](http://www.csie.ntu.edu.tw/), [National Taiwan University](http://www.ntu.edu.tw/), Sep. 2011--Jun. 2015
 
@@ -58,6 +58,7 @@ It compiles directly to x86 assembly.
 
 - Syntax:
 
+    ```
     e ::= c                       ; constants
         | x                       ; variable
         | (lambda (x1 [x2 ...]) e); lambda abstraction
@@ -70,6 +71,7 @@ It compiles directly to x86 assembly.
         | Unit
         | (* t1 t2 [t3 ...])      ; n-tuple, n = 2, 3, 4, ...
         | t1 -> t2
+    ```
 
 - Language:
 
