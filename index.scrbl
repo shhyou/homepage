@@ -1,26 +1,46 @@
 #lang scribble/base
 
-@(require "links-email.scrbl")
+@(require scribble/html-properties
+          (only-in scribble/core style)
+          "links-email.scrbl")
 
-@title{Shu-Hung You}
+@title[#:style (style #f (list (css-style-addition "no-toc.css")))]{Shu-Hung You}
 
-I am a graduate student working on programming languages research with
+I am a Ph.D. student working on programming languages research with
 @hyperlink[robby-page]{Robby Findler} and
 @hyperlink[chrdimo-page]{Christos Dimoulas} at
 @hyperlink[cs-page]{Computer Science},
 @hyperlink[nu-page]{Northwestern University}.
 
-I am interested in improving the quality of programs.
-In particular, my research focuses on automated
-testing methods for finding bugs in functional programs.
-My interests also include designing and implementing
-programming languages.
+I am interested in the theory of programming languages.
+Broadly speaking, I enjoy designing language features
+that ensure correct validation of the behavior of programs.
+My interests also include implementing programming
+languages, building abstract machines, and
+playing with compilers for functional languages.
+
+I currently work on @italic{behavioral boundaries},
+a theoretical foundation for specifying and comparing
+contract systems.
+Behavioral boundaries are a syntactic device that re-structure
+the common formal model of higher-order contract systems into
+an @italic{interposition subsystem} and a @italic{monitoring subsystem}.
+The interposition subsystem track the flow of values in programs
+to emit events during evaluation,
+whereas the monitoring subsystem enforces the contracts.
+By providing a uniform interface between the two subsystems,
+behavioral boundaries enable language designers
+to @italic{specify} contract systems modularly.
+The uniform interface additionally admits a generic safey theorem,
+reducing the boilerplate needed when proving the correctness
+of contract systems.
 
 @section[#:style '(unnumbered)]{▹ Find Me}
 
+@hyperlink[cv-page]{Curriculum Vitae}, @linebreak[]
 @|email|, @linebreak[]
 @hyperlink[github-page]{GitHub} or @linebreak[]
-Mudd 3418
+PLT@"@"Northwestern at Mudd 3418
 
 @section[#:style '(unnumbered)]{Publications}
 

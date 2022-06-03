@@ -19,6 +19,9 @@
 (define github-page
   "url-to-my-github")
 
+(define cv-page
+  "cv-current.pdf")
+
 (define higher-order-concolic-esop21.pdf
   "higher-order-concolic-esop21.pdf")
 
