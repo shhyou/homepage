@@ -38,7 +38,7 @@ of contract systems.
 @section[#:style '(unnumbered)]{▹ Find Me}
 
 @hyperlink[cv-page]{Curriculum Vitae}, @linebreak[]
-@|email|, @linebreak[]
+@elem[#:style (style #f (list (xexpr-property '(span ((id "mailto"))) "")))], @linebreak[]
 @hyperlink[github-page]{GitHub} or @linebreak[]
 PLT@"@"Northwestern at Mudd 3418
 
@@ -80,3 +80,19 @@ PLT@"@"Northwestern at Mudd 3418
   In @italic{Haskell Symposium 2015}.
   @url{https://doi.org/10.1145/2887747.2804315}}
  ]
+
+@(elem
+  #:style
+  (style #f (list (xexpr-property
+                   @list['script '((type "text/javascript"))]{
+(function() {
+  var first = 'FIRST NAME';
+  var last = 'LAST NAME';
+  var old_dept = 'DEPT';
+  var nu = 'northwestern';
+  document.getElementById('mailto').innerText =
+    `${first}.${last}@"@"${old_dept}.${nu}.edu`;
+  return true;
+})();
+}
+                   ""))))
